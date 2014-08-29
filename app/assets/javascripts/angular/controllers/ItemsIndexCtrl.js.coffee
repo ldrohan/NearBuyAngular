@@ -3,4 +3,7 @@
 	$http.get('./items.json').success((data) ->
 		$scope.items = data
 	)
+
+	$scope.viewItem = (id) ->
+		$location.url "/items/#{id}"
 ]

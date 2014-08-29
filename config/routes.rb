@@ -2,11 +2,13 @@ Rails.application.routes.draw do
 
   get 'static_pages/map'
 
+
   root 'static_pages#map'
   
   get '/items' => 'items#index'
   get '/map' => 'items#map'
-  
+  get '/items/:id' => 'items#show'
+
   post '/items/email' => 'items#send_email'  
                           
   post '/favorite' => 'items#save_favorite'

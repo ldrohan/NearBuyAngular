@@ -3,6 +3,10 @@ class ItemsController < ApplicationController
 
 	def index
 		respond_with Item.all
+	end
+
+	def show
+		respond_with @item = Item.find(params[:id])
 	end	
 
 	def send_email
