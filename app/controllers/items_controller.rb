@@ -5,10 +5,6 @@ class ItemsController < ApplicationController
 		respond_with Item.all
 	end	
 
-	def map
-
-	end	
-
 	def send_email
 		@email = params["email"]["body"]
 		#binding.pry

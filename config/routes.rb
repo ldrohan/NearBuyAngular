@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-   root 'items#map'
+  get 'static_pages/map'
+
+  root 'static_pages#map'
   
   get '/items' => 'items#index'
   get '/map' => 'items#map'
