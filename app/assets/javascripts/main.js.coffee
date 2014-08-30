@@ -1,4 +1,4 @@
-@nearbuyangular = angular.module('nearbuyangular', [])
+@nearbuyangular = angular.module('nearbuyangular', ['google-maps'])
 
 @nearbuyangular.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.
