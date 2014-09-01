@@ -1,4 +1,10 @@
-<!-- <h2><a href="/#/items">All Items</a></h2>
-value of "foo": {{foo}} -->
-
-<google-map center="map.center" zoom="map.zoom"></google-map>
+<div>
+	<google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+		<marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id" >
+  	</marker>
+	</google-map>
+<div>
+	
+<p>{{ marker.coords }}</p>
+<p> There are {{ items.length }} For Sale</p>
+<p ng-repeat="item in items">{{ item["name"] }}:</br> {{ item["description"] }}</p>

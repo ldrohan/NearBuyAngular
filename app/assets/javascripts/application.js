@@ -16,7 +16,11 @@
 
 //= require angular
 //= require main
-//= require lodash.underscore.min.js
-//= require angular-google-maps.min.js
+
+// = require lodash.underscore.min.js
+// = require angular-google-maps.min.js
+
+
+
 
 //= require_tree .
